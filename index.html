@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js"></script>
+  <title>개인 소개 웹페이지</title>
+</head>
+<body>
+  <button class="tablink" onclick="openPage('Intro', this, 'cornflowerblue')">Introduction</button>
+  <button class="tablink" onclick="openPage('Road', this, 'burlywood')">Road Map</button>
+  <button class="tablink" onclick="openPage('Hobby', this, 'plum')">Hobby</button>
+  <button class="tablink" onclick="openPage('MBTI', this, 'yellowgreen')">MBTI</button>
+
+  <div id="Intro" class="tabcontent">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="icon.png" alt="Avatar" style="width:400px;height:400px;margin:100px auto 0px;">
+          <h1>Minseok Kang</h1>
+        </div>
+        <div class="flip-card-back">
+          <h1>강민석</h1>
+          <h2>2006/04/15</h2>
+          <h2>17세 (만 16세)</h2>
+          <h2>남</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Road" class="tabcontent">
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>2019</h2>
+          <p>동평초등학교 졸업</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2022</h2>
+          <p>동평중학교 졸업</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>2022</h2>
+          <p>부산소프트웨어마이스터고등학교 입학</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2030~</h2>
+          <p>게임 회사 창업</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Hobby" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+
+  <div id="MBTI" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+</body>
+</html>
