@@ -196,7 +196,6 @@
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-    border: 5px solid black;
     border-radius: 10%;
   }
   
@@ -240,12 +239,4 @@
 
   .container2 h2 {
     color: navy;
-  }
-
-  .center {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
   }
