@@ -57,6 +57,7 @@ body, html {
     font-size: 25px;
     position: fixed;
     background: radial-gradient(circle, white, lightgray, gray);
+    cursor: pointer;
 }
 
 #up {
@@ -128,6 +129,9 @@ body, html {
     margin: 100px auto 10px;
     border-radius: 20px;
 }
+#count, #count2, #count3 {
+    cursor: pointer;
+}
 p {
     font-size: 100px;
 }
@@ -140,6 +144,7 @@ p {
     font-size: 50px;
     color: greenyellow;
     top: -100px;
+    cursor: pointer;
 }
 #Fourth h1 {
     top: 80px;
