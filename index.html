@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>여름방학</title>
+</head>
+<body>
+    <button id="first" class="tablink" onclick="openPage('First', this, 'rgb(200, 200, 200)')">Random Color</button>
+    <button class="tablink" onclick="openPage('Second', this, 'rgb(150, 150, 150)')">Move Square</button>
+    <button class="tablink" onclick="openPage('Third', this, 'rgb(100, 100, 100)')">Rainbow Rings</button>
+    <button class="tablink" onclick="openPage('Fourth', this, 'rgb(50, 50, 50)')">Safe</button>
+
+    <div id="First" class="tabcontent">
+        <h1 onclick="randomColor()">Pick Random Color</h1>
+        <h2 id="rgb">rgb=200,200,200</h2>
+        <h3>HINT:INITIAL VALUE</h3>
+    </div>
+
+    <div id="Second" class="tabcontent">
+        <div id="square"></div>
+        <button id="left" class="move" onclick="moveLeft()">←</button>
+        <button id="right" class="move" onclick="moveRight()">→</button>
+        <button id="up" class="move" onclick="moveUp()">↑</button>
+        <button id="down" class="move" onclick="moveDown()">↓</button>
+        <h3>HINT:SQUARE</h3>
+    </div>
+
+    <div id="Third" class="tabcontent">
+        <div id="board">
+            <div id="point" class="O"></div>
+            <div id="point2" class="O"></div>
+            <div id="point3" class="O"></div>
+            <div id="point4" class="O"></div>
+            <div id="point5" class="O"></div>
+        </div>
+        <h3>HINT:COLORS IN RAINBOW</h3>
+    </div>
+
+    <div id="Fourth" class="tabcontent">
+        <div id="box">
+            <p><strong id="count" onclick="countUp();">0</strong> <strong id="count2" onclick="countUp2();">0</strong> <strong id="count3" onclick="countUp3();">0</strong></p>
+            <button id="check" onclick="summit()">✓</button>
+        </div>
+        <h1 id="result">ENTER PASSWORD</h1>
+    </div>
+</body>
+</html>

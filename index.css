@@ -1,0 +1,183 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    user-select: none;
+    overflow: hidden;
+}
+  
+.tablink {
+    background-color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    font-weight: bold;
+}
+  
+.tablink:hover {
+    background-color: rgb(230, 230, 230);
+}
+  
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 85%;
+    text-align: center;
+}
+
+#First h1 {
+    font-size: 100px;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+#First h2 {
+    color: black;
+}
+
+#square {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 25%;
+    margin-left: 720px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.move {
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    border-style: none;
+    font-size: 25px;
+    position: fixed;
+    background: radial-gradient(circle, white, lightgray, gray);
+}
+
+#up {
+    margin-top: 450px;
+    margin-left: -37px;
+}
+#down {
+    margin-top: 530px;
+    margin-left: -37px;
+}
+#left {
+    margin-top: 530px;
+    margin-left: -117px;
+}
+#right {
+    margin-top: 530px;
+    margin-left: 43px;
+}
+
+#board {
+    position: fixed;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    top: 150px;
+    left: 280px;
+    border-radius: 100px;
+}
+.O {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+}
+#point {
+    box-shadow: 0 0 0 33px red inset;
+    z-index: 5;
+}
+#point2 {
+    box-shadow: 0 0 0 33px orange inset;
+    opacity: 80%;
+    transition-duration: 0.1s;
+    z-index: 4;
+}
+#point3 {
+    box-shadow: 0 0 0 33px yellow inset;
+    opacity: 60%;
+    transition-duration: 0.2s;
+    z-index: 3;
+}
+#point4 {
+    box-shadow: 0 0 0 33px green inset;
+    opacity: 40%;
+    transition-duration: 0.3s;
+    z-index: 2;
+}
+#point5 {
+    box-shadow: 0 0 0 33px blue inset;
+    opacity: 20%;
+    transition-duration: 0.4s;
+    z-index: 1;
+}
+
+#box {
+    height: 150px;
+    width: 500px;
+    background-color: darkgray;
+    margin: 100px auto 10px;
+    border-radius: 20px;
+}
+p {
+    font-size: 100px;
+}
+#check {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border-style: none;
+    background-color: rgb(70, 70, 70);
+    font-size: 50px;
+    color: greenyellow;
+    top: -100px;
+}
+#Fourth h1 {
+    top: 80px;
+    font-size: 30px;
+}
+a {
+    color: white;
+    text-decoration: overline underline;
+}
+h3 {
+    position: fixed;
+    user-select: all;
+}
+#First h3 {
+    color:rgb(200, 200, 200);
+    right: 50px;
+    bottom: 10px;
+}
+#Second h3 {
+    color:rgb(150, 150, 150);
+    right: 300px;
+    bottom: 200px;
+}
+#Third h3 {
+    color:white;
+    right: 400px;
+    bottom: 100px;
+}
+
+#First {
+    background-color: rgb(200, 200, 200);
+}
+#Second {
+    background-color: rgb(150, 150, 150);
+}
+#Third {
+    background-color: rgb(100, 100, 100);
+}
+#Fourth {
+    background-color: rgb(50, 50, 50);
+}
